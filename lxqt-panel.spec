@@ -1,6 +1,6 @@
 Name: lxqt-panel
 Version: 0.12.0
-Release: 4%{?dist}
+Release: 5%{?dist}
 Source0: https://downloads.lxqt.org/downloads/%{name}/%{version}/%{name}-%{version}.tar.xz
 # (doktor5000) add a custom panel configuration as default
 Source1: panel.conf
@@ -73,6 +73,9 @@ cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/xdg/lxqt/panel.conf
 %{_libdir}/%{name}
 %{_mandir}/man1/lxqt-panel.1.*
 %changelog
+* Mon Apr 02 2018 JMiahMan <jmiahman@unity-linux.org> 0.12.0-5
+- Use world clock instead
+
 * Mon Apr 02 2018 JMiahMan <jmiahman@unity-linux.org> 0.12.0-4
 - Update spec file to work with tito
 - Fix clock in panel
