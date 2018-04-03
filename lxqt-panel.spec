@@ -1,9 +1,7 @@
-%define rel 4
-
 Name: lxqt-panel
 Version: 0.12.0
-Release: %mkrel %rel
-Source0: http://downloads.lxqt.org/lxqt/%{version}/%{name}-%{version}.tar.xz
+Release: 5%{?dist}
+Source0: https://downloads.lxqt.org/downloads/%{name}/%{version}/%{name}-%{version}.tar.xz
 # (doktor5000) add a custom panel configuration as default
 Source1: panel.conf
 Summary: Panel for the LXQt desktop
