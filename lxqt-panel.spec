@@ -1,6 +1,6 @@
 Name: lxqt-panel
-Version: 0.12.1
-Release: 1%{?dist}
+Version: 0.12.0
+Release: 6%{?dist}
 Source0: https://downloads.lxqt.org/downloads/%{name}/%{version}/%{name}-%{version}.tar.xz
 # (doktor5000) add a custom panel configuration as default
 Source1: panel.conf
@@ -73,7 +73,7 @@ cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/xdg/lxqt/panel.conf
 %{_libdir}/%{name}
 %{_mandir}/man1/lxqt-panel.1.*
 %changelog
-* Tue Apr 03 2018 Jeremiah Summers <jsummers@glynlyon.com> 0.12.1-1
+* Tue Apr 03 2018 Jeremiah Summers <jsummers@glynlyon.com> 0.12.0-6
 - Tag for rebuild
 
 * Mon Apr 02 2018 JMiahMan <jmiahman@unity-linux.org> 0.12.0-5
