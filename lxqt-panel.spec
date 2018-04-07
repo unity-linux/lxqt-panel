@@ -1,6 +1,6 @@
 Name: lxqt-panel
 Version: 0.12.0
-Release: 6%{?dist}
+Release: 7%{?dist}
 Source0: https://downloads.lxqt.org/downloads/%{name}/%{version}/%{name}-%{version}.tar.xz
 # (doktor5000) add a custom panel configuration as default
 Source1: panel.conf
@@ -73,6 +73,18 @@ cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/xdg/lxqt/panel.conf
 %{_libdir}/%{name}
 %{_mandir}/man1/lxqt-panel.1.*
 %changelog
+* Fri Apr 06 2018 Jeremiah Summers <jsummers@glynlyon.com> 0.12.0-7
+- Fix push (jsummers@glynlyon.com)
+- Automatic commit of package [lxqt-panel] release [0.12.1-1].
+  (jsummers@glynlyon.com)
+- Initialized to use tito. (jsummers@glynlyon.com)
+- Add the file I need to (jmiahman@unity-linux.org)
+- Use world clock instead (jmiahman@unity-linux.org)
+- Use first src rpm found (jmiahman@unity-linux.org)
+- Simplify travis file (jmiahman@unity-linux.org)
+- Automatic commit of package [lxqt-panel] minor release [0.12.0-4].
+  (jmiahman@unity-linux.org)
+
 * Tue Apr 03 2018 Jeremiah Summers <jsummers@glynlyon.com> 0.12.0-6
 - Tag for rebuild
 
