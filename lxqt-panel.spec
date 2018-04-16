@@ -1,6 +1,6 @@
 Name: lxqt-panel
 Version: 0.12.0
-Release: 7%{?dist}
+Release: 9%{?dist}
 Source0: https://downloads.lxqt.org/downloads/%{name}/%{version}/%{name}-%{version}.tar.xz
 # (doktor5000) add a custom panel configuration as default
 Source1: panel.conf
@@ -73,6 +73,26 @@ cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/xdg/lxqt/panel.conf
 %{_libdir}/%{name}
 %{_mandir}/man1/lxqt-panel.1.*
 %changelog
+* Sun Apr 15 2018 Jeremiah Summers <jsummers@glynlyon.com> 0.12.0-9
+- Update .travis.yml (jeremiah.summers@gmail.com)
+- Define SourceDir (jsummers@glynlyon.com)
+- Download source (jsummers@glynlyon.com)
+- no installing buildeps (jsummers@glynlyon.com)
+- just build srpm for now (jsummers@glynlyon.com)
+- -Fix panel file (jsummers@glynlyon.com)
+- Automatic commit of package [lxqt-panel] minor release [0.12.0-8].
+  (jsummers@glynlyon.com)
+
+* Sun Apr 15 2018 Jeremiah Summers <jsummers@glynlyon.com>
+- Update .travis.yml (jeremiah.summers@gmail.com)
+- Define SourceDir (jsummers@glynlyon.com)
+- Download source (jsummers@glynlyon.com)
+- no installing buildeps (jsummers@glynlyon.com)
+- just build srpm for now (jsummers@glynlyon.com)
+- -Fix panel file (jsummers@glynlyon.com)
+- Automatic commit of package [lxqt-panel] minor release [0.12.0-8].
+  (jsummers@glynlyon.com)
+- add unity logo
 * Fri Apr 06 2018 Jeremiah Summers <jsummers@glynlyon.com> 0.12.0-7
 - Fix panel file to call world clock and not try missing plugins
 
